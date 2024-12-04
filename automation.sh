@@ -3,7 +3,6 @@
 for ((i=0; i<30; i++));
 
 do
-  # afl-fuzz 실행
-  timeout 5h ./afl-fuzz -i input -o asanoutput2_$i -m none -C -- ./chrl @@
+  timeout 5h ./afl-fuzz -i input -o asanoutput5_$i -m none -C -- ./worjatk @@
   
 done
